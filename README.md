@@ -7,12 +7,12 @@ Now dynamically rebuilds the display on reorientation.
 
 Packaged with a nodejs server.
 
-Install (Linux)
-Grab node from http://nodejs.org
-Download this repo
-CD into the directory
-sudo npm install 
-sudo nodejs LCARSServer.js
+Install (Linux)  return
+Grab node from http://nodejs.org   return
+Download this repo  return
+CD into the directory  return
+sudo npm install   return
+sudo nodejs LCARSServer.js  return
 
 In development so lots not finished / incomplete...
 
