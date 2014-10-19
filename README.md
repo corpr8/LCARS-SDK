@@ -7,7 +7,7 @@ Now dynamically rebuilds the display on reorientation.
 
 Packaged with a nodejs server.
 
-Install (Linux)  return
+Install (Linux)  <br/>
 Grab node from http://nodejs.org   return
 Download this repo  return
 CD into the directory  return
