@@ -19,7 +19,9 @@ function loadjscssfile(filename, filetype){
 }
 
 if(webviewInfo.type != 'mobile'){
+	loadjscssfile("lcarssdk/css/UIStyleDesktop.css", "css") //dynamically load and add this .css file
 	loadjscssfile("lcarssdk/js/UILogicDesktopTablet.js", "js") //dynamically load and add this .js file
 } else {
+	loadjscssfile("lcarssdk/css/UIStyleMobile.css", "css") //dynamically load and add this .css file
     loadjscssfile("lcarssdk/js/UILogicMobile.js", "js") //dynamically load and add this .js file
 }

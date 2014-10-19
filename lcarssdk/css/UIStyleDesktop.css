@@ -52,7 +52,7 @@ html:not(.ie) .dialog.typeD .title{line-height: .81; }
 #btn_wiki{width:445px;}
 #btn_wiki .numericBlock{width:175px; margin-right:-10px;  margin-left:20px;}
 
-#wpr_svg{min-width:192px;}
+#wpr_svg{min-width:100px;}
 #wpr_svg .svg{display: block; margin-bottom:30px;}
 
 #wpr_postList{margin-left:30px;}
