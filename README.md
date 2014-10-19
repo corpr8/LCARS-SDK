@@ -19,4 +19,4 @@ sudo nodejs LCARSServer.js  <br/>
 
 In development so lots not finished / incomplete...
 
-Currently doesn't render correctly in chrome dev tools but works on device.
+Currently doesn't render correctly in chrome dev tools but works on my Galaxy S5 with both the built in browser and chrome.
