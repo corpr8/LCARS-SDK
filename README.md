@@ -7,6 +7,8 @@ Now dynamically rebuilds the display on reorientation.
 
 Packaged with a nodejs server.
 
+The client now does automatic voice recognition if you are running the lastest google (on both desktop and droid). It'll also stream this back to the server via socket.io - making for a nifty little IoT controller for your Spark Core? ;-)
+
 Install (Linux)  <br/>
 Grab node from http://nodejs.org  <br/>
 Download this repo  <br/>

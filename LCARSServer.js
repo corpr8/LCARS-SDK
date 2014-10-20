@@ -18,17 +18,11 @@ console.log("__dirname: " + __dirname);
 app.use(favicon(__dirname + '/favicon.ico'));
 app.use('/stylesheets', express.static(__dirname + '/stylesheets'));
 app.use('/lcarssdk', express.static(__dirname + '/lcarssdk'));
-//app.use('/lcarssdk/js', express.static(__dirname + '/lcarssdk/js'));
-//app.use('/lcarssdk/css', express.static(__dirname + '/lcarssdk/css'));
 app.use('/js', express.static(__dirname + '/js'));
 app.use('/images', express.static(__dirname + '/images'));
-//app.use('/sketch', express.static(__dirname + '/sketch'));
-
-//app.use('/index.html', express.static(__dirname + '/index.html'));
 
 
 app.get("*", function(req, res){
-  //invertPinState();
   var host = req.url.replace("/","");
   console.log("host: " + host);
   if(req.url == "/"){
@@ -38,17 +32,15 @@ app.get("*", function(req, res){
   }
 });
 
-
-//var io = require('socket.io')();
-
-//socket.io stuff
 var server = app.listen(3001);
 var io = require('socket.io').listen(server);
-//var sockets = [];
 
 io.on('connection', function(socket){ 
   console.log('got socket.io connection');
-  //sockets.push(socket);
+
+  socket.on('voiceCommand', function (data){
+    handleVoiceCommand(data);
+  });
 
   //socket.emit('news', { hello: 'world' });
   socket.volatile.emit('metrics', { 
@@ -56,3 +48,9 @@ io.on('connection', function(socket){
   });
 });
 
+var handleVoiceCommand = function(data){
+  /*
+  * voice commands functions calls in here
+  */
+  console.log(data);
+}

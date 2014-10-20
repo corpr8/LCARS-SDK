@@ -29,7 +29,7 @@ sdkTemplates.dialogWindows.typeD = {
                 label:'test'},
             ]},
             {type:'wrapper', class:'column', id:'wpr_svg1', children:[
-                {type:'wrapper', children:'<h1>New Release - 14278.102</h1><p>FIXED AN ISSUE BECAUSE OF ACCIDENTAL STRINGED BOOLEAN AND SOME COSMETIC TWEAKS.'}
+                {type:'wrapper', id:'results', children:'<h1>New Release - 14278.102</h1><p>FIXED AN ISSUE BECAUSE OF ACCIDENTAL STRINGED BOOLEAN AND SOME COSMETIC TWEAKS.'}
                 ]}
 
             ]}
